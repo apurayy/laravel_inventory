@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\TokenVerificationMiddleware;
@@ -49,3 +50,12 @@ Route::post('/product-delete', [ProductController::class, 'ProductDelete'])->mid
 Route::post('/product-update', [ProductController::class, 'ProductUpdate'])->middleware([TokenVerificationMiddleware::class]);
 Route::post('/product-by-id', [ProductController::class, 'ProductById'])->middleware([TokenVerificationMiddleware::class]);
 //Product-list==========================
+
+
+//Invoice-list==========================
+Route::post('/invoice-create', [InvoiceController::class, 'InvoiceCreate'])->middleware([TokenVerificationMiddleware::class]);
+Route::get('/invoice-list', [InvoiceController::class, 'InvoiceList'])->middleware([TokenVerificationMiddleware::class]);
+Route::post('/invoice-details', [InvoiceController::class, 'InvoiceDetails'])->middleware([TokenVerificationMiddleware::class]);
+Route::post('/invoice-delete', [InvoiceController::class, 'InvoiceDelete'])->middleware([TokenVerificationMiddleware::class]);
+
+//Invoice-list==========================
