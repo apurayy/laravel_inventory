@@ -12,7 +12,7 @@
                         <input type="password" id="password" placeholder="User Password" class="form-control">
 
                         <br>
-                        <button type="" class="btn w-100 btn-primary">Login</button>
+                        <Link href="/dashboard" class="btn w-100 btn-primary">Login</Link>
                         <hr>
                         <span>
                             <Link class="text-center ms-3 h6" href="/registration">Sign-Up </Link>

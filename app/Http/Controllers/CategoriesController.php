@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use Inertia\Inertia;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
 {
+    function CategoryPage(){
+        return Inertia::render('CategoryPage');
+    }
+
+
     public function CategoryList(Request $request){
         $user_id=$request->header('id');
         return Category::where('user_id',$user_id)->get();

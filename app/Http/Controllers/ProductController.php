@@ -3,11 +3,16 @@
 namespace App\Http\Controllers;
 
 use Exception;
+use Inertia\Inertia;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    function ProductPage(){
+        return Inertia::render('ProductPage');
+    }
+
     //Product-Create===================
     function ProductCreate(Request $request){
         try{

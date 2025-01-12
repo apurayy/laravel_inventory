@@ -2,12 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Customer;
 use Exception;
+use Inertia\Inertia;
+use App\Models\Customer;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
+    function CustomerPage(){
+        return Inertia::render('CustomerPage');
+    }
+
     //Customer-Create===============
     function CustomerCreate(Request $request){
         try{

@@ -2,14 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
-use App\Models\Customer;
+use Inertia\Inertia;
 use App\Models\Invoice;
 use App\Models\Product;
+use App\Models\Category;
+use App\Models\Customer;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
+    function DashboardPage(){
+        return Inertia::render('DashboardPage');
+    }
+
+
+
+
     function Summery(Request $request){
         $user_id=$request->header('id');
         $product=Product::where('user_id',$user_id)->count();

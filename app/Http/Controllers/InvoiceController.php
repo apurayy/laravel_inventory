@@ -2,15 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Customer;
-use App\Models\Invoice;
-use App\Models\InvoiceProduct;
 use Exception;
+use Inertia\Inertia;
+use App\Models\Invoice;
+use App\Models\Customer;
 use Illuminate\Http\Request;
+use App\Models\InvoiceProduct;
 use Illuminate\Support\Facades\DB;
 
 class InvoiceController extends Controller
 {
+    function InvoicePage(){
+        return Inertia::render('InvoiceListPage');
+    }
+
     //Invoice-Create========================
     function InvoiceCreate(Request $request){
         DB::beginTransaction();

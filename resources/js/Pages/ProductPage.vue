@@ -1,9 +1,11 @@
 <template>
-    <h1 class="text-primary">Product Page</h1>
+    <SideNavLayout>
+<h4>Product</h4>
+    </SideNavLayout>
 </template>
 
 <script setup>
-
+import SideNavLayout from '../Layout/SideNavLayout.vue';
 </script>
 
 <style scoped>

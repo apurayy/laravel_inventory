@@ -10,7 +10,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Middleware\TokenVerificationMiddleware;
 use Illuminate\Support\Facades\Route;
 
-//User-part===========================
+//User-part-routing===========================
 Route::get('/',[HomeController::class, 'HomePage'])->name('HomePage');
 Route::get('/login',[UserController::class, 'LoginPage'])->name('LoginPage');
 Route::get('/registration',[UserController::class, 'RegistrationPage'])->name('RegistrationPage');
@@ -18,8 +18,12 @@ Route::get('/resetpassword',[UserController::class, 'ResetPasswordPage'])->name(
 Route::get('/sendotp',[UserController::class, 'SendOtpPage'])->name('SendOtpPage');
 Route::get('/verifyotp',[UserController::class, 'VerifyOtpPage'])->name('VerifyOtpPage');
 
-//Dashboard-part===========================
-
+//Dashboard-part-routing===========================
+Route::get('/dashboard',[DashboardController::class, 'DashboardPage'])->name('DashboardPage');
+Route::get('/category',[CategoriesController::class, 'CategoryPage'])->name('CategoryPage');
+Route::get('/customer',[CustomerController::class, 'CustomerPage'])->name('CustomerPage');
+Route::get('/product',[ProductController::class, 'ProductPage'])->name('ProductPage');
+Route::get('/invoice',[InvoiceController::class, 'InvoicePage'])->name('InvoicePage');
 
 
 //user-auth==========================
