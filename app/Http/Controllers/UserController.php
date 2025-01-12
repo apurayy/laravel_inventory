@@ -2,15 +2,39 @@
 
 namespace App\Http\Controllers;
 
-use App\Helper\JWTToken;
-use App\Mail\OTPMail;
-use App\Models\User;
 use Exception;
+use App\Models\User;
+use Inertia\Inertia;
+use App\Mail\OTPMail;
+use App\Helper\JWTToken;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
+
+    function LoginPage(){
+        return Inertia::render('LoginPage');
+    }
+
+    function RegistrationPage(){
+        return Inertia::render('RegistrationPage');
+    }
+
+    function ResetPasswordPage(){
+        return Inertia::render('ResetPasswordPage');
+    }
+
+    function SendOtpPage(){
+        return Inertia::render('SendOtpPage');
+    }
+
+    function VerifyOtpPage(){
+        return Inertia::render('VerifyOtpPage');
+    }
+
+
+
     //user-registration==================
     function userRegistraion(Request $request){
         try{

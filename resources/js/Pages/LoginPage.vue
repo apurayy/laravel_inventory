@@ -1,9 +1,12 @@
 <template>
-    <h1 class="text-primary">Welcome Login Page</h1>
+    <NavLayout>
+        <LoginForm/>
+    </NavLayout>
 </template>
 
 <script setup>
-
+    import NavLayout from "../Layout/NavLayout.vue";
+    import LoginForm from "../Components/User/LoginForm.vue";
 </script>
 
 <style scoped>

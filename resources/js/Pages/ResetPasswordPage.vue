@@ -1,9 +1,12 @@
 <template>
-    <h1 class="text-primary">Reset Password Page</h1>
+    <NavLayout>
+        <ResetPasswordForm/>
+    </NavLayout>
 </template>
 
 <script setup>
-
+    import NavLayout from "../Layout/NavLayout.vue";
+    import ResetPasswordForm from "../Components/User/ResetPasswordForm.vue";
 </script>
 
 <style scoped>

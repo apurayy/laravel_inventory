@@ -1,9 +1,12 @@
 <template>
-    <h1 class="text-primary">Verify Otp Page</h1>
+    <NavLayout>
+        <VerifyOtpForm/>
+    </NavLayout>
 </template>
 
 <script setup>
-
+    import NavLayout from "../Layout/NavLayout.vue";
+    import VerifyOtpForm from "../Components/User/VerifyOtpForm.vue";
 </script>
 
 <style scoped>
