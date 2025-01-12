@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Middleware\TokenVerificationAPIMiddleware;
 
@@ -58,3 +59,8 @@ Route::post('/invoice-details', [InvoiceController::class, 'InvoiceDetails'])->m
 Route::post('/invoice-delete', [InvoiceController::class, 'InvoiceDelete'])->middleware([TokenVerificationAPIMiddleware::class]);
 
 //Invoice-list==========================
+
+
+//Dashboard-list==========================
+Route::post('/summery', [DashboardController::class, 'Summery'])->middleware([TokenVerificationAPIMiddleware::class]);
+//Dashboard-list==========================
