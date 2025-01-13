@@ -26,3 +26,18 @@
 a{
     text-decoration: none !important;
 }
+.icon i{
+    font-size: 25px;
+    color: orange;
+}
+.dh_item{
+    background-color: #fff;
+    transition: all linear 0.4s;
+}
+.dh_item:hover{
+    background-color: orange;
+    color: #fff;
+}
+.dh_item:hover .icon i{
+    color: rgb(38, 0, 255) !important;
+}
