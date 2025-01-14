@@ -63,3 +63,63 @@
     color: orange;
     background-color: #fff;
 }
+
+#footer{
+    background-color: #3009de;
+    padding: 40px 0;
+    color: #fff;
+}
+#footer p{
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+#footer ul li{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+}
+#footer_bottom{
+    background-color: #2e1997;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+#footer_bottom p{
+    font-size: 16px;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+
+
+#about{
+    padding: 60px 0;
+}
+#about p{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+}
+#about .about_btn{
+    padding: 30px 0;
+}
+#about .about_btn a{
+    border: 0;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 17px;
+    transition: all linear 0.4s;
+}
+#about .about_btn a:hover{
+    color: orange;
+    background-color: #fff;
+    border: 1px solid orange;
+}
+#about img{
+    width: 100%;
+}
