@@ -1,9 +1,11 @@
 <template>
-    <h1 class="text-primary">Welcome Home Page</h1>
+    <Navbar/>
+    <Hero/>
 </template>
 
 <script setup>
-
+    import Navbar from '../Components/Home/Navbar.vue';
+    import Hero from '../Components/Home/Hero.vue';
 </script>
 
 <style scoped>

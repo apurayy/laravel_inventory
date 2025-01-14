@@ -1,0 +1,65 @@
+#menu_bar{
+    background-color: #3009de;
+}
+
+#menu_bar .logo{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#menu_bar ul li a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+#menu_bar ul li a:hover{
+    color: orange;
+}
+.login_btn{
+    background-color: orange;
+    margin-left: 10px;
+    padding: 5px 20px !important;
+    border-radius: 15px;
+    transition: all linear 0.4s;
+}
+.login_btn:hover{
+    color: orange !important;
+    background-color: #fff;
+}
+
+#hero{
+    background-color: #4f457f;
+    padding: 80px 0;
+}
+#hero .hero_left img{
+    width: 100%;
+}
+#hero .details h2{
+    color: #fff;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+}
+#hero .details p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+}
+.hero_btn{
+    padding: 20px 0;
+}
+.hero_btn a{
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all linear 0.4s;
+}
+.hero_btn a:hover{
+    color: orange;
+    background-color: #fff;
+}
