@@ -30,30 +30,44 @@
 
             <Link href="/customer" class="side-bar-item">
                 <span class="side-bar-item-icon">
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-user-nurse"></i>
                 </span>
                 <span class="side-bar-item-caption">Customer</span>
             </Link>
 
             <Link href="/product" class="side-bar-item">
                 <span class="side-bar-item-icon">
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-gift"></i>
                 </span>
                 <span class="side-bar-item-caption">Product</span>
             </Link>
 
             <Link href="/product" class="side-bar-item">
                 <span class="side-bar-item-icon">
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-regular fa-pen-to-square"></i>
                 </span>
                 <span class="side-bar-item-caption">Sales</span>
             </Link>
 
             <Link href="/invoice" class="side-bar-item">
                 <span class="side-bar-item-icon">
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-file-invoice"></i>
                 </span>
                 <span class="side-bar-item-caption">Invoice</span>
+            </Link>
+
+            <Link href="/profile" class="side-bar-item">
+                <span class="side-bar-item-icon">
+                    <i class="fa-solid fa-user"></i>
+                </span>
+                <span class="side-bar-item-caption">Profile</span>
+            </Link>
+
+            <Link href="" class="side-bar-item">
+                <span class="side-bar-item-icon">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </span>
+                <span class="side-bar-item-caption">Logout</span>
             </Link>
 
         </div>

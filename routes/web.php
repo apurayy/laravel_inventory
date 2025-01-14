@@ -24,6 +24,7 @@ Route::get('/category',[CategoriesController::class, 'CategoryPage'])->name('Cat
 Route::get('/customer',[CustomerController::class, 'CustomerPage'])->name('CustomerPage');
 Route::get('/product',[ProductController::class, 'ProductPage'])->name('ProductPage');
 Route::get('/invoice',[InvoiceController::class, 'InvoicePage'])->name('InvoicePage');
+Route::get('/profile',[UserController::class, 'ProfilePage'])->name('ProfilePage');
 
 
 //user-auth==========================

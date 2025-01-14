@@ -33,6 +33,10 @@ class UserController extends Controller
         return Inertia::render('VerifyOtpPage');
     }
 
+    function ProfilePage(){
+        return Inertia::render('ProfilePage');
+    }
+
 
 
     //user-registration==================

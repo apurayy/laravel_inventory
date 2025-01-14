@@ -1,11 +1,12 @@
 <template>
     <SideNavLayout>
-<h4>Product</h4>
+        <ProductList/>
     </SideNavLayout>
 </template>
 
 <script setup>
-import SideNavLayout from '../Layout/SideNavLayout.vue';
+import SideNavLayout from '../Layout/SideNavLayout.vue'
+import ProductList from '../Components/Product/ProductList.vue'
 </script>
 
 <style scoped>
